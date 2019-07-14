@@ -37,7 +37,9 @@ import com.example.customeventbus.reflect.ReflectHelper;
  * EventBusService.MyHandler-->handleMessage -->通过MainUI--EventBus 分发到当前进程的事件观察者（要防止被再发回到服务进程）
  */
 public class EventBusService extends Service implements ObserverCallback {
-    //注册
+    /**
+     * 注册
+     */
     private static final int MSG_REGISTER = 1;
     //注销
     private static final int MSG_UNREGISTER = 2;
